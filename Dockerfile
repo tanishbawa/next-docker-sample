@@ -30,12 +30,17 @@ CMD ["npm", "run", "dev"]
 
 # DOCKER COMMANDS
 # docker build .
+# docker build -t imageName:01 or docker build -t testingapp:01 , -t is for tag
 # docker image ls
 # docker run imageName
 # docker run -p 3000:3000 imagename
 # docker run -d -p 3000:3000 imageName
 # docker run -d --rm -p 3000:3000 imageName
 # docker run -d --rm --name "testing" -p 3000:3000 imageName
+# docker run -it imageName (it is interactive terminal)
+# docker run -it --rm -v myVolume:/app imageName   (/app is the name of docker root)
 # docker ps
 # docker ps -a
 # docker stop <container_name> or docker stop testing
+# docker rmi imageName
+# docker tag oldImageName:tag newImageName

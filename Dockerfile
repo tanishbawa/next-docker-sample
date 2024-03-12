@@ -44,3 +44,9 @@ CMD ["npm", "run", "dev"]
 # docker stop <container_name> or docker stop testing
 # docker rmi imageName
 # docker tag oldImageName:tag newImageName
+
+# docker volume create volume_database
+# docker volume ls
+# docker run -v volume_database://data/db -p 3000:3000 imageId
+# docker volume rm voule database
+# docker exec -it containerName /bin/bash   ->>> alows user to go inside container and give you bash shell

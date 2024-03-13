@@ -50,3 +50,16 @@ CMD ["npm", "run", "dev"]
 # docker run -v volume_database://data/db -p 3000:3000 imageId
 # docker volume rm voule database
 # docker exec -it containerName /bin/bash   ->>> alows user to go inside container and give you bash shell
+
+# docker netowrk create networkName
+# docker run -p 3000:3000 --name containerName --network my_custom_network imageID  ->> when connecting a container to network, give container name
+# This container name can be used to pass as env variable
+
+# docker run -p 3000:3000 -e envVarName=example imageID
+# docker run -p 3000:3000 -e MONGO_URI=mongodb://localhost:3000 imageID
+# If using networks then localhost will be changed with the container name specified while creating the container for that particular network.
+
+# docker build . --target development/staging/production -t appName
+
+# docker run -v .:/usr/src/app imageName  
+# It is saying . and /usr/src/app are the same and if any change is done in any of the places, both will get affected.

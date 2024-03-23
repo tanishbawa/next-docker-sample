@@ -52,6 +52,7 @@ CMD ["npm", "run", "dev"]
 # docker exec -it containerName /bin/bash   ->>> alows user to go inside container and give you bash shell
 
 # docker netowrk create networkName
+# docker network create -d bridge my-bridge-network
 # docker run -p 3000:3000 --name containerName --network my_custom_network imageID  ->> when connecting a container to network, give container name
 # This container name can be used to pass as env variable
 

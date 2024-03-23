@@ -30,7 +30,7 @@ CMD ["npm", "run", "dev"]
 
 # DOCKER COMMANDS
 # docker build .
-# docker build -t imageName:01 or docker build -t testingapp:01 , -t is for tag
+# docker build -t imageName:01 . or docker build -t testingapp:01 . , -t is for tag
 # docker image ls
 # docker run imageName
 # docker run -p 3000:3000 imagename
